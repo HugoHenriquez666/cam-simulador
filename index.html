@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HH Simulador de Cámara Fotográfica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logo de Hugo Henriquez (Nuevo y Mejorado) -->
+    <header>
+        <div class="logo-container">
+            <span class="logo-h">H</span>
+            <span class="logo-name">ugo</span>
+            <span class="logo-surname">Henriquez</span>
+        </div>
+    </header>
+
+    <!-- Vista previa de la escena -->
+    <main class="preview-area">
+        <img id="scene-image" src="nina_palomas.jpg" alt="Vista previa de la escena">
+    </main>
+
+    <!-- Simulador de Cámara (Representación visual) -->
+    <section class="camera-simulator">
+        <img src="camara_simulador.png" alt="Simulador de cámara">
+    </section>
+
+    <!-- Menú para seleccionar la escena -->
+    <select id="scene-selector">
+        <option value="nina_palomas.jpg">Niña con Palomas <span class="progress-icon" id="progress-nina_palomas"></span></option>
+        <option value="mariposa.jpg">Mariposa <span class="progress-icon" id="progress-mariposa"></span></option>
+        <option value="perro_catedral.jpg">Perro y Catedral <span class="progress-icon" id="progress-perro_catedral"></span></option>
+        <option value="estatua.jpg">Estatua <span class="progress-icon" id="progress-estatua"></span></option>
+    </select>
+
+    <!-- Controles de la Cámara -->
+    <section class="controls">
+        <!-- 1. Enfoque (con guías visuales) -->
+        <div class="dial" id="focus-dial">
+            <span class="dial-name">Enfoque</span>
+        </div>
+
+        <!-- 2. Apertura -->
+        <div class="dial" id="aperture-dial">
+            <span class="dial-value">f/4.5</span>
+            <span class="dial-name">Apertura</span>
+        </div>
+
+        <!-- 3. Velocidad -->
+        <div class="dial" id="shutter-dial">
+            <span class="dial-value">1/125</span>
+            <span class="dial-name">Velocidad</span>
+        </div>
+
+        <!-- 4. ISO -->
+        <div class="dial" id="iso-dial">
+            <span class="dial-value">200</span>
+            <span class="dial-name">ISO</span>
+        </div>
+
+        <button id="shoot-button">Disparar</button>
+        <button id="reset-button">Reiniciar Progreso</button>
+    </section>
+
+    <!-- Sección de Consejos -->
+    <footer class="advice-section">
+        <p id="advice-text">Consejo de Hugo Henriquez aparecerá aquí.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
