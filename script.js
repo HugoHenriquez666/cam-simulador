@@ -56,7 +56,8 @@ document.addEventListener('mousemove', function(event) {
 
     apertureDial.style.transform = `rotate(${rotation}deg)`;
 
-    const apertureValues = ['f/1.8', 'f/2.8', 'f/4', 'f/5.6', 'f/8', 'f/11', 'f/16'];
+    // --- VALORES ACTUALIZADOS PARA APERTURA ---
+    const apertureValues = ['f/1.7', 'f/2', 'f/2.5', 'f/4', 'f/5.6', 'f/8', 'f/11', 'f/16', 'f/22', 'f/32', 'f/36'];
     const index = Math.round((rotation + 180) / (360 / apertureValues.length));
     const clampedIndex = Math.max(0, Math.min(apertureValues.length - 1, index));
     dialValue.textContent = apertureValues[clampedIndex];
@@ -85,7 +86,8 @@ document.addEventListener('mousemove', function(event) {
 
     shutterDial.style.transform = `rotate(${rotation}deg)`;
 
-    const shutterValues = ['1/8', '1/15', '1/30', '1/60', '1/125', '1/250', '1/500', '1/1000'];
+    // --- VALORES ACTUALIZADOS PARA VELOCIDAD ---
+    const shutterValues = ['1', '2', '4', '8', '15', '30', '60', '125', '250', '500', '1000', '2000', '3000'];
     const index = Math.round((rotation + 180) / (360 / shutterValues.length));
     const clampedIndex = Math.max(0, Math.min(shutterValues.length - 1, index));
     shutterValue.textContent = shutterValues[clampedIndex];
@@ -114,7 +116,8 @@ document.addEventListener('mousemove', function(event) {
 
     isoDial.style.transform = `rotate(${rotation}deg)`;
 
-    const isoValues = ['100', '200', '400', '800', '1600', '3200'];
+    // --- VALORES ACTUALIZADOS PARA ISO ---
+    const isoValues = ['100', '200', '400', '800', '1600', '3200', '6400'];
     const index = Math.round((rotation + 180) / (360 / isoValues.length));
     const clampedIndex = Math.max(0, Math.min(isoValues.length - 1, index));
     isoValue.textContent = isoValues[clampedIndex];
