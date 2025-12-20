@@ -334,3 +334,4 @@ resetButton.addEventListener('click', function() {
 
 // --- INICIALIZACIÓN DE LA APLICACIÓN ---
 updateProgressUI(); // Carga el progreso guardado al iniciar la app
+
